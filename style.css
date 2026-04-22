@@ -394,17 +394,7 @@ body {
     font-style: italic;
 }
 
-/* Mobil Moslashuvchanlik */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-    }
-    .footer-bottom {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-}
+
 
 /* Animatsiyalar (JS uchun classlar) */
 .reveal {
@@ -481,10 +471,52 @@ body {
     color: #3b82f6;
     transform: scale(1.2);
 }
-/* Mobil moslashuvchanlik */
+/* Mobil qurilmalar uchun maxsus moslashuv (Instagram Bio va Telefonlar uchun) */
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* Mobil menyu qo'shish mumkin */
-    .hero-content h1 { font-size: 38px; }
-    .hero-buttons { flex-direction: column; }
-    .btn { text-align: center; }
+    /* Asosiy paddingni kamaytiramiz */
+    .hero, .services, .portfolio, .contact {
+        padding: 60px 5%;
+    }
+
+    /* Profil rasmini kichraytiramiz */
+    .profile-img-container img {
+        width: 200px; /* 400px dan 200px ga tushirdik */
+        height: 200px;
+        border-width: 3px;
+    }
+
+    /* Sarlavhalarni moslashtiramiz */
+    .hero-content h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero-content h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Navigatsiya menyusini Instagram brauzerida yaxshiroq ko'rsatish */
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    /* Xizmatlar va loyihalar kartalarini moslashtirish */
+    .service-container, .portfolio-container {
+        grid-template-columns: 1fr;
+    }
 }
