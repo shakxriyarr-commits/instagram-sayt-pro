@@ -194,14 +194,14 @@ body {
     gap: 30px;
 }
 
-.profile-img-container{
-
-}
 .profile-img-container img {
-    border-radius: 300px;
-    width: 300px;
-    height: 300px;
+    border-radius: 50%; /* Dumaloq qilishning eng yaxshi usuli */
+    width: 100%; /* Ekran o'lchamiga moslashadi */
+    max-width: 400px; /* Eng katta holatda 400px dan oshmaydi */
+    aspect-ratio: 1 / 1; /* Bo'yi va eni mutanosib (kдрат) bo'lishini ta'minlaydi */
+    object-fit: cover; /* Rasm siqilib qolmasligi uchun */
     border: solid 5px #3b82f6;
+    margin: 0 auto; /* O'rtaga joylashishini ta'minlaydi */
 }
 
 .card-info h4 {
@@ -394,7 +394,17 @@ body {
     font-style: italic;
 }
 
-
+/* Mobil Moslashuvchanlik */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
 
 /* Animatsiyalar (JS uchun classlar) */
 .reveal {
@@ -471,52 +481,54 @@ body {
     color: #3b82f6;
     transform: scale(1.2);
 }
-/* Mobil qurilmalar uchun maxsus moslashuv (Instagram Bio va Telefonlar uchun) */
+
+/* Mobil moslashuvchanlik */
 @media (max-width: 768px) {
-    /* Asosiy paddingni kamaytiramiz */
-    .hero, .services, .portfolio, .contact {
-        padding: 60px 5%;
+    .nav-links { 
+        display: none; 
     }
-
-    /* Profil rasmini kichraytiramiz */
+    
     .profile-img-container img {
-        width: 200px; /* 400px dan 200px ga tushirdik */
-        height: 200px;
-        border-width: 3px;
+        max-width: 250px; /* Telefonda rasmni biroz kichraytiramiz */
     }
 
-    /* Sarlavhalarni moslashtiramiz */
-    .hero-content h1 {
-        font-size: 32px;
-        text-align: center;
+    .hero-content h1 { 
+        font-size: 32px; /* Telefonda matn juda yirik bo'lib ketmasligi uchun */
     }
-
+    
     .hero-content h3 {
         font-size: 20px;
-        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 30px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-        width: 100%;
+    .hero-buttons { 
+        flex-direction: column; 
+        gap: 15px;
     }
 
-    .btn {
-        width: 100%;
-        text-align: center;
+    .btn { 
+        text-align: center; 
+        width: 100%; /* Tugmalar telefonda to'liq kenglikni egallaydi */
     }
 
-    /* Navigatsiya menyusini Instagram brauzerida yaxshiroq ko'rsatish */
-    .navbar {
-        padding: 15px 5%;
+    .footer-container { 
+        flex-direction: column; 
     }
 
-    .logo {
-        font-size: 22px;
+    .footer-bottom { 
+        flex-direction: column; 
+        gap: 15px; 
+        text-align: center; 
     }
-
-    /* Xizmatlar va loyihalar kartalarini moslashtirish */
-    .service-container, .portfolio-container {
-        grid-template-columns: 1fr;
+    
+    /* Yon qismlardagi bo'shliqni telefonda qisqartirish */
+    .services, .portfolio, .contact, .main-footer {
+        padding: 60px 5%;
+    }
+    .hero {
+        padding: 0 5%;
     }
 }
