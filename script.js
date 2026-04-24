@@ -117,6 +117,41 @@ async function sendToTelegram(event) {
     }
 }
  const i18n = {
+        ru: {
+        nav_home: "Главная", nav_about: "Обо мне", nav_services: "Услуги", nav_projects: "Мои проекты", nav_contact: "Контакты",
+        hero_hi: "Привет, я <span>Шахриёр Аллаберганов</span>",
+        hero_role: "Разработчик Web и Telegram ботов",
+        hero_btn_projects: "Смотреть проекты",
+        hero_btn_contact: "Сделать заказ",
+        about_title: "Обо <span>мне</span>",
+        about_text: "Меня зовут Шахриёр. Я в сфере IT уже 1 год. За это время я научился создавать веб-сайты, Telegram-ботов и размещать их на хостинге. Я получил эти знания под руководством моего наставника Аброра Бектемирова и сейчас продолжаю обучение в учебном центре «Kemapro Education».",
+        services_title: "Мои <span>Услуги</span>",
+        srv_web_title: "Web Разработка",
+        srv_web_desc: "С помощью HTML, CSS и JS создаю интерактивные и красивые веб-сайты любой сложности.",
+        srv_bot_title: "Telegram боты",
+        srv_bot_desc: "Боты с отличной админ-панелью, системами работы с клиентами и корзиной.",
+        srv_design_title: "Модерн Дизайн",
+        srv_design_desc: "Современные UI/UX решения, такие как «Luxury Dark», которые привлекают пользователей.",
+        projects_title: "Мои <span>Проекты</span>",
+        proj1_title: "«Web-сайт для клиентов»",
+        proj1_desc: "Полностью адаптивный сайт ресторана с современным интерфейсом и анимациями.",
+        proj2_title: "Telegram-бот для магазина",
+        proj2_desc: "Бот с системой корзины, приемом заказов и идеальным меню администратора.",
+        proj3_title: "Специальный Веб Проект",
+        proj3_desc: "Личное портфолио и блог со сложным функционалом, написанным на JavaScript.",
+        btn_visit: "Перейти на сайт",
+        btn_visit_bot: "Перейти в бот",
+        contact_title: "Свяжитесь <span>со мной</span>",
+        contact_desc: "Реализуем ваш проект вместе! Оставьте мне сообщение.",
+        ph_name: "Ваше имя",
+        ph_phone: "Ваш телефон (например: +99890...)",
+        ph_msg: "Напишите ваше сообщение...",
+        btn_send: "Отправить",
+        f_brand_desc: "Создание качественных сайтов и сложных Telegram-ботов — моя главная цель.",
+        f_col1: "УСЛУГИ", f_col2: "ТЕХНОЛОГИИ", f_col3: "ИНФОРМАЦИЯ",
+        s1: "Веб-разработка", s2: "Telegram боты", s3: "UI/UX Дизайн", s4: "SMM Панели",
+        i1: "Портфолио", i2: "Профиль Kwork", i3: "Опыт", i4: "Контакты"
+    },
     uz: {
         nav_home: "Asosiy", nav_about: "Men Haqimda", nav_services: "Xizmatlar", nav_projects: "Loyihalarim", nav_contact: "Aloqa",
         hero_hi: "Salom, men <span>Shahriyor Allaberganov</span>",
@@ -152,40 +187,7 @@ async function sendToTelegram(event) {
         s1: "Web Dasturlash", s2: "Telegram Botlar", s3: "UI/UX Dizayn", s4: "SMM Panel",
         i1: "Portfolio", i2: "Kwork Profil", i3: "Tajriba", i4: "Bog'lanish"
     },
-    ru: {
-        nav_home: "Главная", nav_about: "Обо мне", nav_services: "Услуги", nav_projects: "Мои проекты", nav_contact: "Контакты",
-        hero_hi: "Привет, я <span>Шахриёр Аллаберганов</span>",
-        hero_role: "Разработчик Web и Telegram ботов",
-        hero_btn_projects: "Смотреть проекты",
-        hero_btn_contact: "Сделать заказ",
-        about_title: "Обо <span>мне</span>",
-        about_text: "Меня зовут Шахриёр. Я в сфере IT уже 1 год. За это время я научился создавать веб-сайты, Telegram-ботов и размещать их на хостинге. Я получил эти знания под руководством моего наставника Аброра Бектемирова и сейчас продолжаю обучение в учебном центре «Kemapro Education».",
-        services_title: "Мои <span>Услуги</span>",
-        srv_web_title: "Web Разработка",
-        srv_web_desc: "С помощью HTML, CSS и JS создаю интерактивные и красивые веб-сайты любой сложности.",
-        srv_bot_title: "Telegram боты",
-        srv_bot_desc: "Боты с отличной админ-панелью, системами работы с клиентами и корзиной.",
-        srv_design_title: "Модерн Дизайн",
-        srv_design_desc: "Современные UI/UX решения, такие как «Luxury Dark», которые привлекают пользователей.",
-        projects_title: "Мои <span>Проекты</span>",
-        proj1_desc: "Полностью адаптивный сайт ресторана с современным интерфейсом и анимациями.",
-        proj2_title: "Telegram-бот для магазина",
-        proj2_desc: "Бот с системой корзины, приемом заказов и идеальным меню администратора.",
-        proj3_title: "Специальный Веб Проект",
-        proj3_desc: "Личное портфолио и блог со сложным функционалом, написанным на JavaScript.",
-        btn_visit: "Перейти на сайт",
-        btn_visit_bot: "Перейти в бот",
-        contact_title: "Свяжитесь <span>со мной</span>",
-        contact_desc: "Реализуем ваш проект вместе! Оставьте мне сообщение.",
-        ph_name: "Ваше имя",
-        ph_phone: "Ваш телефон (например: +99890...)",
-        ph_msg: "Напишите ваше сообщение...",
-        btn_send: "Отправить",
-        f_brand_desc: "Создание качественных сайтов и сложных Telegram-ботов — моя главная цель.",
-        f_col1: "УСЛУГИ", f_col2: "ТЕХНОЛОГИИ", f_col3: "ИНФОРМАЦИЯ",
-        s1: "Веб-разработка", s2: "Telegram боты", s3: "UI/UX Дизайн", s4: "SMM Панели",
-        i1: "Портфолио", i2: "Профиль Kwork", i3: "Опыт", i4: "Контакты"
-    }
+
 };
 
 function changeLang(lang) {
