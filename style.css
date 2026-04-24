@@ -319,6 +319,10 @@ body {
     padding: 80px 8% 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+.hrbek{
+    color: #020511;
+    background-color:#020511 ;
+}
 
 .footer-container {
     display: flex;
@@ -464,24 +468,37 @@ body {
     cursor: pointer;
 }
 
-.social-links-minimal {
+/* Ikonkalar konteyneri */
+.social-icons {
     display: flex;
+    gap: 15px; /* Ikonkalar orasidagi masofa */
+    padding: 20px;
+    text-align: center;
     justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-    font-size: 24px;
 }
 
-.social-links-minimal a {
-    color: #94a3b8;
-    transition: 0.3s;
+/* Barcha ikonka tugmalari uchun umumiy uslub */
+.icon-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Doira shakli uchun */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Yengil oq kontur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white; /* Ikonka rangi */
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.05); /* To'q fon effekti */
+    transition: all 0.3s ease;
 }
 
-.social-links-minimal a:hover {
-    color: #3b82f6;
-    transform: scale(1.2);
+/* Hover effekti (sichqoncha borganda) */
+.icon-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
 }
-
 /* --- Oldingi CSS kodlaringiz shunday qoladi --- */
 
 /* Til almashtirish tugmalari */
