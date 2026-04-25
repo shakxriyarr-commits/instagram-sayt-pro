@@ -548,6 +548,54 @@ body {
     line-height: 1.8;
 }
 
+/* Burger tugmasi stili */
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    order: 2;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row !important; /* Ustma-ust tushishni to'xtatadi */
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 15px 5% !important;
+    }
+
+    .logo {
+        font-size: 20px !important; /* Logotip kichrayadi */
+        order: 1;
+    }
+
+    .menu-btn {
+        display: block; /* 3 chiziq ko'rinadi */
+    }
+
+    .lang-switch {
+        order: 3;
+        margin-top: 0 !important;
+    }
+
+    .nav-links {
+        display: none; /* Menyuni yashirib turamiz */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(5, 8, 20, 0.98);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 2px solid #3b82f6;
+    }
+
+    .nav-links.active {
+        display: flex; /* Tugma bosilganda chiqadi */
+    }
+}
 /* Mobil moslashuvchanlik ichiga shuni qo'shib qo'ying */
 @media (max-width: 768px) {
     .navbar {
